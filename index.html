@@ -7,9 +7,9 @@
     <meta name="description" content="">
     <style>
         @media (max-width: 768px) {
-            .send{
-            display:none;
-            }
+        .send{
+        display:none;
+        }
         }
         * {
             padding: 0;
@@ -170,57 +170,57 @@
             </div>
         </div>
         <div class="s_show">
-            <div class="magictime twisterInUp">
-                Mac 和 iOS 3月 Android 和 Windows 5月
-            </div>
-            <div class="magictime twisterInUp">
-                那个...大家找替代的买仨月半年就行。另外我可以帮你们鉴别下，有些是收x年很便宜然后失联的。
-            </div>
-            <div class="magictime twisterInUp">
-                现在换主体得换俩仨月，顺带更新了挨批批
-            </div>
-            <div class="magictime twisterInUp">
-                ....
-            </div>
-            <div class="magictime twisterInUp">
-                是因为原来公司清算了
-            </div>
-            <div class="magictime twisterInUp">
-                得换
-            </div>
-            <div class="magictime twisterInUp">
-                电商亏损太狠
-            </div>
-            <div class="magictime twisterInUp">
-                没融到新一轮
-            </div>
-            <div class="magictime twisterInUp">
-                8月底上线，测试发现一个cpu占用太高的bug。这几天刚改完。
-            </div>
-            <div class="magictime twisterInUp">
-                7月就开始做准备工作了
-            </div>
-            <div class="magictime twisterInUp">
-                接支付 做官网
-            </div>
-            <div class="magictime twisterInUp">
-                就o了
-            </div>
-            <div class="magictime twisterInUp">
-                充100 抵50
-            </div>
-            <div class="magictime twisterInUp">
-                主页君：我想退群
-            </div>
-            <div class="magictime twisterInUp">
-                周小虫：多态停用三年多 啥时恢复也没说 广大群友好无奈 先用别的来凑合
-            </div>
-            <div class="magictime twisterInUp">
-                ⊙_⊙：突忆高总旧时语，才觉多态又三年。主页君已成追忆，金秋能再见来君？
-            </div>
-            <div class="magictime twisterInUp">
-                走起：Ri ni ma,tui qian!
-            </div>
+            <!--<div class="magictime twisterInUp">-->
+            <!--    Mac 和 iOS 3月 Android 和 Windows 5月-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    那个...大家找替代的买仨月半年就行。另外我可以帮你们鉴别下，有些是收x年很便宜然后失联的。-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    现在换主体得换俩仨月，顺带更新了挨批批-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    ....-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    是因为原来公司清算了-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    得换-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    电商亏损太狠-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    没融到新一轮-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    8月底上线，测试发现一个cpu占用太高的bug。这几天刚改完。-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    7月就开始做准备工作了-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    接支付 做官网-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    就o了-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    充100 抵50-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    主页君：我想退群-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    周小虫：多态停用三年多 啥时恢复也没说 广大群友好无奈 先用别的来凑合-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    ⊙_⊙：突忆高总旧时语，才觉多态又三年。主页君已成追忆，金秋能再见来君？-->
+            <!--</div>-->
+            <!--<div class="magictime twisterInUp">-->
+            <!--    走起：Ri ni ma,tui qian!-->
+            <!--</div>-->
         </div>
         <div id="show" class="tracking-in-contract-bck">
             <span>距离「 多态 」不能使用已过去</span>
@@ -230,8 +230,9 @@
             <span id="i2"></span> 分
             <span id="s2"></span> 秒
         </div>
-        <div class="footer">duotai.me 参差「 多态 」 乃幸福本源v1.0.2021092419</div>
+        <div class="footer">duotai.me 参差「 多态 」 乃幸福本源</div>
     </div>
+    <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script>
         //模块化 每个功能函数去做自己相应的事情 代码可维护性 可扩展性
         //初始化函数
@@ -242,13 +243,46 @@
         var oText = document.querySelector('.text');
         var time = 0;//上一次你发送的时间
         var time1 = 0;
-        //点击发送弹幕
-
+        var name = '多态群友';
+        // 获取
+        $.ajax({
+            type:'get',
+        	url: 'http://81.70.254.35/api/index/getmessage',
+        	success: function(data) {
+        	    setListData(data.data.data)
+        	}
+        })
+        function setListData(data) {
+			var listDom = document.getElementById("rw_box");
+			for (var i = 0; i < data.length; i++) {
+				var newObj = data[i];
+				var oDiv = document.createElement('div');//创建div
+                oDiv.innerHTML = newObj.title;//添加弹幕内容
+                oDiv.className = 'magictime twisterInUp';//弹幕特效
+                oShow.appendChild(oDiv);//添加一个子节点 
+                init(oDiv);//初始化
+			}
+		}
+		//获取
+        //发送
         oBtn.onclick = function () {//鼠标点击事件
             //oBtn.style.backgroundColor = randomColor();//按钮背景颜色变换
             time1 = new Date();
             oBtn.style.color = randomColor();//按钮字体颜色变换
             if (time1 - time > 3000) {//2次发送的时间必须大于2秒
+                console.log(oText.value)
+                $.ajax({
+                    type:'post',
+                	url: 'http://81.70.254.35/api/index/addmessage',
+                	data: {
+                		name:name,
+                		title:oText.value
+                	},
+                	success: function(data) {
+                	    alert('发送成功')
+                	}
+                })
+                // 发送弹幕到数据库
                 var oDiv = document.createElement('div');//创建div
                 oDiv.innerHTML = oText.value;//添加弹幕内容
                 oDiv.className = 'magictime twisterInUp';//弹幕特效

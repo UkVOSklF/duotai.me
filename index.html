@@ -247,7 +247,7 @@
         // 获取
         $.ajax({
             type:'get',
-        	url: 'http://81.70.254.35/api/index/getmessage',
+        	url: 'https://duotai.wenchuba.com/api/index/getmessage',
         	success: function(data) {
         	    setListData(data.data.data)
         	}
@@ -273,7 +273,7 @@
                 console.log(oText.value)
                 $.ajax({
                     type:'post',
-                	url: 'http://81.70.254.35/api/index/addmessage',
+                	url: 'https://duotai.wenchuba.com/api/index/addmessage',
                 	data: {
                 		name:name,
                 		title:oText.value
